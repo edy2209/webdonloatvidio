@@ -1,0 +1,263 @@
+:root {
+    --pink: #f14e95;
+    --bg: #ffffff;
+    --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--bg);
+}
+/* Perbarui CSS Anda sebagai berikut */
+
+/* Kode CSS untuk mengatur tata letak navbar */
+.mynavbar .sticky-top {
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(4px);
+  }
+  
+  /* Atur warna latar belakang tombol toggler */
+  .navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .navbar {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    backdrop-filter: blur(4px);
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 100%;
+  }
+  
+  .offcanvas-body a:hover {
+    background-color: var(--pink);
+    color: white;
+  }
+  
+  .offcanvas-body a {
+    margin: 1.5rem;
+    font-family: arial;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar .navbar-brand {
+    font-size: 3rem;
+    font-family: 'sacramento';
+    color: var(--pink);
+    font-weight: bold;
+  }
+  
+  /* Perbarui properti ini untuk mengatur tata letak "LoveDownload" ke kiri */
+  .navbar .navbar-brand {
+    margin-left: 1rem;
+  }
+  
+  /* Perbarui properti ini untuk mengatur tata letak tombol toggler dan tautan menu ke kanan */
+  .navbar .navbar-toggler,
+  .navbar .navbar-nav {
+    margin-right: 1rem;
+  }
+  
+  
+
+.home{
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.inputan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    text-align: center; /* Menengahkan input group */
+}
+
+.input-group {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.input-group input,
+.input-group button {
+    width: calc(80% - 0.75rem);
+}
+
+.inputan .btn {
+    background-color: var(--pink);
+    color: white;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.pesan {
+    margin-top: 1rem;
+    text-align: center; /* Menengahkan teks pada h2 dan p */
+}
+.pesan h2{
+    font-family: Cambria;
+    font-size: 2rem;
+}
+.pesan p{
+    font-size: 0.8rem;
+}
+.info {
+    background: black; /* Latar belakang hitam untuk seluruh layar */
+    color: white; /* Warna teks putih agar terlihat di atas latar belakang hitam */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100vh; /* Tinggi 100vh untuk mengisi seluruh layar */
+    width: 100%; /* Lebar 100% untuk mengisi seluruh lebar layar */
+    margin: 0; /* Hapus margin default yang diberikan oleh browser */
+    padding: 0; /* Hapus padding default yang diberikan oleh browser */
+}
+
+
+
+.info h1{
+    font-family: 'sacramento';
+    font-size: 3rem;
+    color: var(--pink);
+    font-weight: bold;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.info ul {
+    list-style: none; /* Jenis bullet list */
+    margin-left: 1.5rem; /* Margin kiri untuk daftar */
+    padding-left: 1rem; /* Padding kiri untuk daftar */
+    margin-bottom: 40px;
+    
+
+}
+
+.info ul li {
+    margin-bottom: 0.5rem; /* Ruang bawah setiap item daftar */
+    font-size: 1rem; 
+    font-family: serif;
+}
+
+.info p {
+    font-size: 1rem; /* Ukuran teks paragraf */
+    line-height: 1.5; /* Spasi baris antar paragraf */
+    margin-bottom: 1rem; /* Ruang bawah setiap paragraf */
+    font-family: serif;
+    margin-bottom: 50px;
+}
+.info span{
+    font-family: serif;
+    font-size: 1rem ;
+}
+
+footer{
+    font-size: 1rem;
+    padding: 3rem;
+    background-color: var(--pink);
+    color: white;
+    height: auto;
+    width: 100%;
+
+}
+footer a{
+    color: var(--bg);
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0.5rem;
+}
+footer a:hover{
+    color: white;
+}
+
+footer li {
+    list-style: none;
+    display: inline;
+   
+
+}
+
+/* tablet*/
+@media (max-width: 576px) {
+    
+    .navbar {
+        position: relative !important;
+        backdrop-filter: none !important;
+        margin-top: 0 !important;
+        display: flex !important;
+        top: 0 !important; /* Untuk memastikan elemen tetap di bagian atas */
+        align-items: center !important; /* Mengatur vertikal alignment ke tengah */
+    }
+    .navbar .navbar-brand{
+        font-size: 2rem;
+    }
+    .navbar-toggler {
+        padding: 0.25rem 0.5rem; /* Sesuaikan ukuran padding sesuai kebutuhan Anda */
+        font-size: 1rem; /* Sesuaikan ukuran font sesuai kebutuhan Anda */
+      }
+    
+    .input-group {
+        width: 70%;
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+    .pesan h2{
+        font-family: Cambria;
+        font-size: 1rem;
+    }
+    .pesan p{
+        font-size: 0.6rem;
+    }
+    .info h1 {
+        font-size: 2rem; /* Ukuran huruf yang lebih kecil */
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .info ul li {
+        font-size: 0.7rem; /* Ukuran huruf yang lebih kecil */
+    }
+
+    .info p {
+        font-size: 0.7rem; /* Ukuran huruf yang lebih kecil */
+        margin-bottom: 1rem;
+    }
+    .info span{
+        font-size: 0.7rem;
+    }
+
+    .contact .block {
+        font-size: 0.6rem; /* Mengatur ukuran tulisan "All right reserved." */
+      }
+      
+      .contact li a i {
+        font-size: 0.6rem; /* Mengatur ukuran ikon media sosial */
+      }
+      
+    
+}
